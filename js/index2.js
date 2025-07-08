@@ -182,8 +182,9 @@ document.addEventListener("DOMContentLoaded", () => {
                     $button_contents_area.classList.remove("hit");
                     $best_product.classList.remove("hide");
                     $arrow.classList.remove("a_hide");
-                    rotate_text.classList.add("block");
-                    buttons.forEach(btn=>{btn.classList.remove("act");
+                    desktop_rotate();
+                    buttons.forEach(btn=>{
+                        btn.classList.remove("act");
                     });
                     contents.forEach(c => {c.classList.remove("active")});
                     current_category = null; //상태 초기화
@@ -194,8 +195,9 @@ document.addEventListener("DOMContentLoaded", () => {
                 //새로 열기
                 $button_contents_area.classList.add("hit");
                 $best_product.classList.add("hide");
-                rotate_text.classList.remove("block");
                 $arrow.classList.add("a_hide");
+                /* 메뉴 열었을 때 회전하라는 문구 숨기기 */
+                rotate_text.classList.remove("block");
                 buttons.forEach(btn=>btn.classList.remove("act"));
                 i.classList.add("act");
                 contents.forEach(c=>{
