@@ -355,10 +355,7 @@ ul{
     visibility: hidden;
     opacity: 0;
 }
-#best_img{
-    position: relative;
-    /* cursor: grab; */ /* 잡으려고 준비중 */
-}
+
 #cube{
    position: absolute;
    width: 400px;
@@ -466,6 +463,10 @@ ul{
     50%{opacity: 1;}
 }
 /* 직육면체 넘기는 아이콘 */
+#best_img{
+    position: relative;
+    /* cursor: grab; */ /* 잡으려고 준비중 */
+}
 #arrow{
     position: absolute;
     top: 70%;
