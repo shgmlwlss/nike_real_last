@@ -1,0 +1,343 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href = "css/index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Teachers:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+    <script src="js/index2.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div id="layout">
+        <header><!-- 버튼으로 구성된 메뉴 -->
+            <div>
+                <div class="tab_nav">
+                <button data-filter = "brand" class="brand_btn">스토리</button>
+                <button data-filter = "product" class="product_btn">제품</button>
+                <button data-filter = "collection" class="collection_btn">컬렉션</button>
+                <button data-filter = "newsRoom" class="newsRoom_btn">뉴스룸</button>
+                <button data-filter = "notice" class="notice_btn">공지사항</button>
+                </div>
+            </div>
+
+            <!-- 버튼 컨텐츠 시작 -->
+            <div class="button_contents_area">
+                 <ul class = "button_contents">
+                <li data-category="brand">
+                    <div id="video_contents">
+                        <div class="video">
+                        <video src="image/video_4.mp4" loop muted autoplay></video>
+                        </div>
+                        <div id="typing">
+                            <strong>
+                            <b></b><br>
+                            <b class="second_b act"></b>
+                            </strong>
+                        </div>
+                    </div>
+                   
+                    <div class="story">
+                        <p>
+                            ‘나이키(Nike)’는 그리스 신화 속 승리의 여신 니케에서 이름을 따왔으며,<br>
+                            1971년 스우시 로고를 채택했습니다. 1988년부터는 “Just Do It” 슬로건을 통해<br>
+                            스포츠와 삶에 도전하는 모든 이들의 정신을 응원하고 있습니다.
+                        </p>
+                    </div>
+                   
+                </li> <!-- 브랜드 버튼 컨텐츠 부분 끝 -->
+
+                <!-- 상품 버튼 컨텐츠 부분 시작 -->
+                <li data-category="product" id = "product">
+                    <div class="product_subMenus">
+                        <button data-sub = "shoes" class="sub_shoes">신발</button>
+                        <button data-sub = "clothes" class="sub_shoes">의류</button>
+                    </div>
+                    <ul id="product_area">
+                        <li data-sub="shoes" id="shoes_contents">
+                            <a href="#" class="shoes_mainMenu">클래식</a>
+                            <nav class="shoes_subMenu">
+                                <a href="#">에어 포스 1</a>
+                                <a href="#">덩크 로우</a>
+                                <a href="#">에어 조던 1</a>
+                                <a href="#">코르테즈</a>
+                                <a href="#">블레이저 미드 '77</a>
+                            </nav>
+                        </li>
+
+                         <li data-sub="shoes">
+                            <a href="#" class="shoes_mainMenu">런닝 무드</a>
+                            <nav class="shoes_subMenu">
+                                <a href="#">에어 맥스 90</a>
+                                <a href="#">에어 맥스 97</a>
+                                <a href="#">에어 맥스 1</a>
+                                <a href="#">에어 베이퍼맥스</a>
+                                <a href="#">줌 보메로 5</a>
+
+                            </nav>
+                        </li>
+
+                         <li data-sub="shoes">
+                            <a href="#" class="shoes_mainMenu">트렌디/하이엔드</a>
+                            <nav class="shoes_subMenu">
+                                <a href="#">테크 헤라</a>
+                                <a href="#">필드 제너럴</a>
+                                <a href="#">사카이</a>
+                                <a href="#">언더커버</a>
+                            </nav>
+                        </li>
+
+                         <li data-sub="shoes">
+                            <a href="#" class="shoes_mainMenu">슬립온 & 캐주얼</a>
+                            <nav class="shoes_subMenu">
+                                <a href="#">다운쉬프터</a>
+                                <a href="#">킬샷</a>
+                                <a href="#">와플 원</a>
+                            </nav>
+                        </li>
+                        <!-- 상품 버튼의 신발 메뉴 부분 끝 -->
+
+                         <!-- 상품 버튼의 옷 메뉴 부분 시작 -->
+
+                         <li data-sub="clothes" id="clothes_contents">
+                            <a href="#" class="clothes_mainMenu">티셔츠</a>
+                            <nav class="clothes_subMenu">
+                                <a href="#">드라이핏 스포츠웨어</a>
+                                <a href="#">에센셜 코튼 티</a>
+                                <a href="#">에어포스 1 그래픽 티</a>
+                                <a href="#">조던 스포츠 티</a>
+                                <a href="#">나이키 스포츠웨어 클럽</a>
+
+                            </nav>
+                        </li>
+
+                             <li data-sub="clothes">
+                            <a href="#" class="clothes_mainMenu">후드티</a>
+                            <nav class="clothes_subMenu">
+                                <a href="#">나이키 클럽 플리스 후디</a>
+                                <a href="#">에어 조던 후디</a>
+                                <a href="#">테크 플리스 후디</a>
+                                <a href="#">나이키 스포츠웨어 후디</a>
+                                <a href="#">드라이핏 후디</a>
+
+                            </nav>
+                        </li>
+
+                             <li data-sub="clothes">
+                            <a href="#" class="clothes_mainMenu">집업/트레이닝 자켓</a>
+                            <nav class="clothes_subMenu">
+                                <a href="#">나이키 테크 플리스 집업</a>
+                                <a href="#">에어 조던 플리스 자켓</a>
+                                <a href="#">스포츠웨어 윈드러너</a>
+                                <a href="#">에센셜 드라이핏 자켓</a>
+                                <a href="#">에어 줌 자켓</a>
+
+                            </nav>
+                        </li>
+
+                             <li data-sub="clothes">
+                            <a href="#" class="clothes_mainMenu">레깅스</a>
+                            <nav class="clothes_subMenu">
+                                <a href="#">원 로고 레깅스</a>
+                                <a href="#">에어 줌 레깅스</a>
+                                <a href="#">프로 하이웨이스트 레깅스</a>
+                                <a href="#">에센셜 컴프레션 레깅스</a>
+                                <a href="#">드라이핏 스우시 레깅스</a>
+
+                            </nav>
+                        </li>
+                    </ul>
+                </li>
+                <!-- 상품 버튼의 옷 메뉴 부분 끝 -->
+
+                <li data-category="collection" id="collection">
+                    <strong>
+                        <b>RE:MOVE</b><br>
+                        <a href="#">
+                            더 나은 지구를 위한 첫 걸음.<br>
+                            재활용 소재를 사용한 제품으로, 지속 가능한 미래를 향한 움직임을 시작한다.
+                        </a>
+                    </strong>
+                    <div class="collection_Area">
+                        <div class="img-box">
+                            <img src="image/red_d.jpg" alt="img_1" class="img_p">
+                            <img src="image/hands.jpg" alt="img_1" class="img_hover">
+                        </div>
+                         <div class="img-box">
+                            <img src="image/skyblue.jpg" alt="img_2" class="img_p">
+                            <img src="image/black2.jpg" alt="img_2" class="img_hover">
+                        </div>
+                         <div class="img-box">
+                            <img src="image/green_b3.jpg" alt="img_3" class="img_p">
+                            <img src="image/gray_2.jpg" alt="img_3" class="img_hover">
+                        </div>
+                         <div class="img-box">
+                            <img src="image/gray_3.jpg" alt="img_4" class="img_p">
+                            <img src="image/green2.jpg" alt="img_4" class="img_hover">
+                        </div>
+                        <div id = "follow_text"></div>
+                    </div>
+                </li>
+                <!-- 컬렉션 부분 끝-->
+
+                <li data-category="newsRoom" id="newsRoom">
+                   <div class="all_article">
+                        <article class="newsRoom_article">
+                            <a href="#"><img src="image/green_1.jpg" alt="기사1"></a>
+                            <div>
+                            <p>나이키</p>
+                            <h2>지금, 한계를 넘어라</h2>
+                            <p>2025.06.23</p>
+                            </div>
+                        </article>
+
+                        <article class="newsRoom_article">
+                            <a href="#"><img src="image/green_b2.jpg" alt="기사2"></a>
+                            <div>
+                            <p>나이키</p>
+                            <h2>지금, 한계를 넘어라</h2>
+                            <p>2025.06.21</p>
+                            </div>
+                        </article>
+
+                        <article class="newsRoom_article">
+                            <a href="#"><img src="image/red2.jpg" alt="기사3"></a>
+                            <div>
+                            <p>나이키</p>
+                            <h2>지금, 한계를 넘어라</h2>
+                            <p>2025.05.29</p>
+                            </div>
+                        </article>
+                       
+
+                      
+                        <article class="newsRoom_article">
+                            <a href="#"><img src="image/green_b3.jpg" alt="기사1"></a>
+                            <div>
+                            <p>나이키</p>
+                            <h2>지금, 한계를 넘어라</h2>
+                            <p>2025.06.23</p>
+                            </div>
+                        </article>
+
+                        <article class="newsRoom_article">
+                            <a href="#"><img src="image/product_img/shoes_1.jpg" alt="기사2"></a>
+                            <div>
+                            <p>나이키</p>
+                            <h2>지금, 한계를 넘어라</h2>
+                            <p>2025.06.21</p>
+                            </div>
+                        </article>
+
+                        <article class="newsRoom_article">
+                            <a href="#"><img src="image/product_img/shoes_3.jpg" alt="기사3"></a>
+                            <div>
+                            <p>나이키</p>
+                            <h2>지금, 한계를 넘어라</h2>
+                            <p>2025.05.29</p>
+                            </div>
+                        </article>
+
+                        <article class="newsRoom_article">
+                            <a href="#"><img src="image/product_img/shoes_5.jpg" alt="기사1"></a>
+                            <div>
+                            <p>나이키</p>
+                            <h2>지금, 한계를 넘어라</h2>
+                            <p>2025.06.23</p>
+                            </div>
+                        </article>
+
+                        <article class="newsRoom_article">
+                            <a href="#"><img src="image/product_img/shoes_6.jpg" alt="기사2"></a>
+                            <div>
+                            <p>나이키</p>
+                            <h2>지금, 한계를 넘어라</h2>
+                            <p>2025.06.21</p>
+                            </div>
+                        </article>
+
+                        <article class="newsRoom_article">
+                            <a href="#"><img src="image/product_img/shoes_7.jpg" alt="기사3"></a>
+                            <div>
+                            <p>나이키</p>
+                            <h2>지금, 한계를 넘어라</h2>
+                            <p>2025.05.29</p>
+                            </div>
+                        </article>
+
+                        <article class="newsRoom_article">
+                            <a href="#"><img src="image/product_img/shoes_8.jpg" alt="기사1"></a>
+                            <div>
+                            <p>나이키</p>
+                            <h2>지금, 한계를 넘어라</h2>
+                            <p>2025.06.23</p>
+                            </div>
+                        </article>
+
+                        <article class="newsRoom_article">
+                            <a href="#"><img src="image/product_img/shoes_9.jpg" alt="기사2"></a>
+                            <div>
+                            <p>나이키</p>
+                            <h2>지금, 한계를 넘어라</h2>
+                            <p>2025.06.21</p>
+                            </div>
+                        </article>
+
+                        <article class="newsRoom_article">
+                            <a href="#"><img src="image/product_img/shoes_10.jpg" alt="기사3"></a>
+                            <div>
+                            <p>나이키</p>
+                            <h2>지금, 한계를 넘어라</h2>
+                            <p>2025.05.29</p>
+                            </div>
+                        </article>
+                        </div>
+                </li>
+                <!-- 뉴스룸 부분 끝 -->
+
+                <li data-category="notice" id="notice">
+                    <p>친환경 컬렉션 런칭 기념 캠페인 안내 나이키의 새로운 지속가능 컬렉션 출시를 기념하여 진행됩니다.<br>
+                    커뮤니티 게시판 리뉴얼 예정 더 나은 소통 공간을 만들기 위해 커뮤니티 게시판 UI가 개편될 예정입니다.<br>
+                 
+                </p>
+                </li>
+           </ul>
+        </div>
+        </header>
+
+         <!-- 메인 홈페이지 베스트 상품 -->
+         <section id="best_product">
+            <h3>best</h3>
+            <div id="best_img">
+                <div id="cube">
+                    <div class="img_wrap" id="wrap_1">
+                    <a href="#"><img src="image/gray_1.jpg" alt="베스트 상품1"></a>
+                </div>
+                 <div class="img_wrap" id="wrap_2">
+                    <a href="#"><img src="image/gray_2.jpg" alt="베스트 상품1"></a>
+                </div>
+                 <div class="img_wrap" id="wrap_3">
+                    <a href="#"><img src="image/gray_3.jpg" alt="베스트 상품1"></a>
+                </div>
+                 <div class="img_wrap" id="wrap_4">
+                    <a href="#"><img src="image/gray_1.jpg" alt="베스트 상품1"></a>
+                </div>
+                </div>
+            </div>
+        </section>
+        <div id="arrow">
+             <button class="material-symbols-outlined">arrow_left</button> 
+            <button class="material-symbols-outlined">arrow_right</button>  
+        </div>
+       
+    </div> <!-- 레이아웃 끝 -->
+    <div id="move_img">
+        <img src="image/product_img/shoes_1.jpg" alt="서브메뉴 항목 제품">
+    </div><!-- 제품 항목의 서브메뉴 텍스트를 스치면 해당 신발 제품이 나오도록 -->
+     <div id="move_img_c">
+        <img src="image/product_clothes/clothes_1.jpg" alt="서브메뉴 항목 제품">
+    </div><!-- 제품 항목의 서브메뉴 텍스트를 스치면 해당 옷 제품이 나오도록 -->
+       </body>
+</html>
