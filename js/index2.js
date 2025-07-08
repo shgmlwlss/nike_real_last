@@ -56,6 +56,33 @@ document.addEventListener("DOMContentLoaded", () => {
         window.addEventListener("touchend", end_drag);
         window.addEventListener("touchmove", hands_move);
 
+        /* 회전하라는 글자 표시 */
+       
+            const rotate_text = document.querySelector("#rotate_me");
+             function rotate_move (e){
+                    const x = e.pageX + 20;
+                    const y = e.pageY + 20;
+                    rotate_text.style.left = `${x}px`;
+                    rotate_text.style.top = `${y}px`;
+                }
+                //조건 적용 함수
+                const desktop_rotate =()=>{
+                    if(window.innerWidth >= 1280){
+                        rotate_text.classList.add("block");
+                        $best_img.addEventListener("mousemove",rotate_move);
+                    }else{
+                        rotate_text.classList.remove("block");
+                        $best_img.removeEventListener("mousemove",rotate_move);
+                            
+                    }
+                }
+                
+
+                window.addEventListener("load",desktop_rotate);
+                window.addEventListener("resize",desktop_rotate);
+                   
+        
+
 
         /* 다음 페이지를 누르면 다른 제품이 보인다. ==>4장이 한꺼번에 바뀐다. */
 
@@ -87,31 +114,7 @@ document.addEventListener("DOMContentLoaded", () => {
             });
         });
 
-      
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+ 
   // 첫 번째 타자 효과
         const type_contents_1 = document.querySelectorAll("#typing strong b")[0];
         const contents1_text = "세상의 모든 운동선수에게 영감과 혁신을 전달한다.";
