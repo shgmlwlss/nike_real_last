@@ -182,6 +182,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     $button_contents_area.classList.remove("hit");
                     $best_product.classList.remove("hide");
                     $arrow.classList.remove("a_hide");
+                    rotate_text.classList.add("block");
                     buttons.forEach(btn=>{btn.classList.remove("act");
                     });
                     contents.forEach(c => {c.classList.remove("active")});
@@ -193,6 +194,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 //새로 열기
                 $button_contents_area.classList.add("hit");
                 $best_product.classList.add("hide");
+                rotate_text.classList.remove("block");
                 $arrow.classList.add("a_hide");
                 buttons.forEach(btn=>btn.classList.remove("act"));
                 i.classList.add("act");
