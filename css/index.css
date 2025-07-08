@@ -445,6 +445,26 @@ ul{
     100%{transform: rotateY(360deg);}
 
 }
+/* 회전하라는 텍스트 */
+#rotate_me{
+    position: absolute;
+    color: white;
+    font-size: 18pt;
+    mix-blend-mode: difference;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%);
+    animation: rotate_ani 1.5s infinite;
+    opacity: 0.8;
+    display: none;
+}
+#rotate_me.block{
+    display: block;
+}
+@keyframes rotate_ani {
+    0%,100%{opacity: 0.6;}
+    50%{opacity: 1;}
+}
 /* 직육면체 넘기는 아이콘 */
 #arrow{
     position: absolute;
@@ -623,6 +643,10 @@ ul{
     white-space: nowrap;
     font-size: 0.95rem;
 }
+ .material-symbols-outlined {
+      transform: scale(1.8);
+      
+    }
 /* 공지사항 */
 #notice p{
     font-size: 0.75rem;
@@ -701,7 +725,7 @@ ul{
 }
 
  .material-symbols-outlined {
-      transform: scale(1.8);
+      transform: scale(1.5);
       
     }
 
